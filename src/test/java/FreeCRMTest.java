@@ -36,8 +36,8 @@ public class FreeCRMTest {
 	@BeforeTest
 	public void setExtent(){
 		extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html", true);
-		extent.addSystemInfo("Host Name", "Naveen Mac");
-		extent.addSystemInfo("User Name", "Naveen Automation Labs");
+		extent.addSystemInfo("Host Name", "ArvindPC");
+		extent.addSystemInfo("User Name", "Arvind");
 		extent.addSystemInfo("Environment", "QA");
 		
 	}
@@ -67,7 +67,7 @@ public class FreeCRMTest {
 	@BeforeMethod
 	public void setup(){
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
+		System.setProperty("webdriver.chrome.driver", "src/resource/chromedriver.exe");	
 		driver = new ChromeDriver(); 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
